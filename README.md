@@ -1,6 +1,6 @@
 # Root Motion Animation Track
 
-A custom Timeline track for playing animations on characters via Timeline.
+A custom Timeline track for playing animations on characters via Timeline that does proper scene offsets.
 
 ## Overview
 
@@ -74,3 +74,4 @@ public class RootMotionHandler : MonoBehaviour
 - At runtime, you can bind root motion to NavMesh, physics, or custom movement systems
 - In edit mode (Timeline scrubbing), you apply the animator's delta directly for preview
 - You can customize the runtime behavior based on your game's needs (physics, CharacterController, etc.)
+
