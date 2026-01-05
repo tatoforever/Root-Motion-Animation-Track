@@ -56,6 +56,7 @@ public class RootMotionHandler : MonoBehaviour
             // Example using NavMeshAgent:
             float y = Mathf.Lerp(transform.position.y, CachedNavMesh.nextPosition.y, Time.deltaTime * 6f);
             transform.position = new Vector3(CachedNavMesh.nextPosition.x, y, CachedNavMesh.nextPosition.z);
+            transform.rotation = CachedAnimator.rootRotation;
         }
         else
         {
@@ -74,4 +75,5 @@ public class RootMotionHandler : MonoBehaviour
 - At runtime, you can bind root motion to NavMesh, physics, or custom movement systems
 - In edit mode (Timeline scrubbing), you apply the animator's delta directly for preview
 - You can customize the runtime behavior based on your game's needs (physics, CharacterController, etc.)
+
 
